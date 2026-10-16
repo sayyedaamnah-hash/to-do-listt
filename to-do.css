@@ -1,0 +1,139 @@
+body {
+    background: rgb(248, 191, 239)
+}
+#main {
+    background: linear-gradient(to right, #a18cd1, #df80c4);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 600px;
+    width: 470px;
+    border:#4f075d solid 1px;
+    border-radius: 10px;
+}
+ 
+.completed:hover {
+    text-decoration: line-through;
+    color: rgb(101, 92, 92);
+        cursor: pointer;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-stretch: 2px;
+    font-size: 48px;
+    text-align: center;
+    color: #60195a;
+    
+}
+#taskInput {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+#enterTask {
+    padding: 10px;
+    width: 300px;
+    background-color: #fbc2eb;
+    border: 1px solid #524b4b;
+    border-radius: 10px;
+    margin-right: 10px;
+ 
+
+}
+#addTask{
+    padding: 10px;
+    width: 90px;
+    border: 1px solid #4f075d;
+    background-color: #fbc2eb;
+    border-radius: 10px;
+    margin-right: 10px;
+
+
+}
+
+#taskContainer {
+    
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+.editButton {
+    background-color: hsl(165, 30%, 68%);
+     padding: 6px 12px;
+    border: solid darkgreen 1px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 8px;
+}
+.editButton:hover {
+    background-color: hsl(165, 30%, 58%);
+}
+
+.deleteButton {
+    background-color: hsl(0, 70%, 68%);
+    padding: 6px 12px;
+    border: solid darkred 1px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 8px;
+}
+.deleteButton:hover {
+    background-color: hsl(0, 70%, 58%);
+}
+
+#taskList li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Align task text and buttons in columns */
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Give every task name equal space */
+#taskList li span {
+    width: 130px;
+    flex-shrink: 0;
+}
+
+/* Make all Edit buttons equal in width */
+.editButton {
+    width: 60px;
+    box-sizing: border-box;
+    margin-left: 0;
+    flex-shrink: 0;
+}
+
+/* Make all Delete buttons equal in width */
+.deleteButton {
+    width: 78px;
+    box-sizing: border-box;
+    margin-left: 0;
+    flex-shrink: 0;
+}
